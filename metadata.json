@@ -1,0 +1,6 @@
+{
+  "name": "ISRM Insight Hub & Platform Configurator",
+  "description": "Unified dual-journey platform configurator, network graph, and commercial scope estimator for the Institute of Strategic Risk Management (ISRM) with distinct Partner and Client paths.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

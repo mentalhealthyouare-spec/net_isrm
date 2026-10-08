@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --isrm-petrol-deep: #0B2422;
+    --isrm-petrol-panel: #0E302E;
+    --isrm-petrol-base: #123C3A;
+    --isrm-petrol-mid: #1C4F52;
+    --isrm-petrol-bright: #2A6E78;
+    --isrm-petrol-accent: #3E91A2;
+    --isrm-orange-deep: #8A3410;
+    --isrm-orange-base: #B5481A;
+    --isrm-orange-vivid: #E8741E;
+    --isrm-orange-light: #F08A2E;
+    --isrm-gold-deep: #C8901A;
+    --isrm-gold-brass: #E3A22E;
+    --isrm-gold-bright: #EBB13A;
+    --isrm-gold-cream: #FCE9B0;
+    --isrm-yellow-alert: #E8C24A;
+    --isrm-signal-red: #E50914;
+    --isrm-sand-bg: #E9DEC9;
+    --isrm-sand-card: #F2EADB;
+    --isrm-sand-cream: #EFE6D2;
+    --isrm-green-heading: #0B544C;
+    --isrm-body-dark: #13302C;
+  }
+
+  body {
+    font-family: 'Source Sans 3', 'Lato', sans-serif;
+    color: #13302C;
+    background-color: #E9DEC9;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-display-oswald {
+  font-family: 'Oswald', 'Archivo', sans-serif;
+}
+
+.font-display-archivo {
+  font-family: 'Archivo', sans-serif;
+}
+
+.font-isrm-heading {
+  font-family: 'Montserrat', 'Archivo', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'Spline Sans Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Light Narrative & Calculation Surface — Sand Grid */
+.surface-sand-narrative {
+  background-color: #E9DEC9;
+  background-image:
+    linear-gradient(rgba(18, 60, 58, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 60, 58, 0.045) 1px, transparent 1px);
+  background-size: 26px 26px;
+  color: #13302C;
+}
+
+/* Dark Immersive Graph Workspace Surface — Petrol Technical Schematic Grid */
+.surface-petrol-workspace {
+  background-color: #0E302E;
+  background-image:
+    linear-gradient(rgba(227, 162, 46, 0.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(227, 162, 46, 0.075) 1px, transparent 1px);
+  background-size: 56px 56px;
+  color: #F2EADB;
+}
+
+/* Functional / Diagnostic Puzzle & Diamond Notch Grid */
+.surface-petrol-functional {
+  background-color: #0B2422;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(232, 116, 30, 0.08) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(-45deg, rgba(232, 116, 30, 0.08) 0 1px, transparent 1px 24px);
+  color: #F2EADB;
+}
+
+/* Heading Frame with Canted Border */
+.heading-plate-sand {
+  display: inline-block;
+  border: 2px solid #123C3A;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: rgba(242, 234, 219, 0.65);
+}
+
+.heading-plate-dark {
+  display: inline-block;
+  border: 1.5px solid rgba(227, 162, 46, 0.65);
+  border-radius: 10px;
+  padding: 8px 18px;
+  background: rgba(11, 36, 34, 0.75);
+}
+
+/* Dashed Gold Leader Line */
+.leader-line-gold {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    #E3A22E 0,
+    #E3A22E 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+.leader-line-petrol {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    #123C3A 0,
+    #123C3A 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+/* Print / PDF Stylesheet */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+  }
+}
